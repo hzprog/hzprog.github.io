@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*overflow-y: scroll;*/
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  z-index: -2;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top : 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,1);
+}
+
+
+
+.header__links {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0  1.5rem;
+}
+
+.header__links a:hover {
+  text-decoration: underline white solid;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 1.5rem;
+}
+
+main {
+  position: relative;
+  padding-top: 5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.image__bitmoji {
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,1);
+  border-radius: 50%;
+  overflow: auto;
+  justify-self: center;
+}
+
+.text__bitmoji {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-size: 2rem;
+  width: 70%;
+}
