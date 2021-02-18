@@ -10,6 +10,11 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: 4.7rem auto fit-content(8rem);
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
   font-size: 1.2rem;
   height: 100%;
 }
@@ -30,6 +35,7 @@ header {
   top : 0;
   left: 0;
   z-index: 10;
+  display: flex;
   background: rgba(0,0,0,1);
 }
 
@@ -55,12 +61,8 @@ header {
 }
 
 main {
-  position: relative;
-  padding-top: 5rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 1.5rem;
+  grid-area: main;
 }
 
 .presentation {
@@ -70,10 +72,11 @@ main {
 }
 
 .image__bitmoji {
-  display: inline-block;
   border: 1px solid rgba(0,0,0,1);
   border-radius: 50%;
-  overflow: auto;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
   justify-self: center;
 }
 
@@ -82,6 +85,14 @@ main {
   align-self: center;
   justify-self: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 70%;
+}
+
+footer {
+  background: white;
+  grid-area: footer;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-items: center;*/
 }
