@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/stars.css"/>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
 </head>
 <body>
 
@@ -18,28 +19,40 @@
     </section>
 </div>
 
-<header class="header">
-    <div class="header__links">
-        <a class="header__link" href="#">Projects</a>
-        <a class="header__link" href="#">Skills</a>
-        <a class="header__link" href="#">About Me</a>
-        <a class="header__link" href="#">Contact Me</a>
+<header class="main-header">
+    <a href="index.html" class="main-header__logo">
+        <img src="./images/bitmoji.png" alt="Image of my Bitmoji in snapchat">
+    </a>
+    <div>
+        <div class="main-header__links">
+            <a class="header__link" href="#">Projects</a>
+            <a class="header__link" href="#">Skills</a>
+            <a class="header__link" href="#">About Me</a>
+            <a class="header__link" href="#">Contact Me</a>
+        </div>
+        <div class="main-header__button" onclick="addChangeToButton(this)">
+            <div class="main-header__button-line bar1"></div>
+            <div class="main-header__button-line bar2"></div>
+            <div class="main-header__button-line bar3"></div>
+        </div>
     </div>
 </header>
 
 <main>
-    <div class="presentation">
-        <div class="image__bitmoji">
-            <img src="./images/bitmoji.png" alt="Image of my Bitmoji in snapchat">
+    <section id="section-1">
+        <div class="presentation">
+            <div class="presentation-image">
+                <img src="./images/bitmoji.png" alt="Image of my Bitmoji in snapchat">
+            </div>
+            <div class="presentation-text">
+                <h1>Hello I'm Houari Software engineer And web Developer</h1>
+            </div>
         </div>
-        <div class="text__bitmoji">
-            <h1 class="text__bitmoji-title">Hello I'm Houari Software engineer And web Developer</h1>
-        </div>
-    </div>
+    </section>
 </main>
 
 <footer>
-    <a href="#">Support</a>
+    <a href="#">this site was realised by me</a>
 </footer>
 
 </body>

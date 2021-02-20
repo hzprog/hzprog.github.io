@@ -1,109 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 4.7rem auto fit-content(8rem);
-    grid-template-areas: "header"
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-areas: "header"
                         "main"
                         "footer";
-    font-size: 1.2rem;
-    height: 100%;
+  font-size: 1.2rem;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
-    color: white;
+  color: white;
 }
 
 
 .background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    /*overflow-y: scroll;*/
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    z-index: -2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*overflow-y: scroll;*/
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  z-index: -2;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    display: flex;
-    background: rgba(0, 0, 0, 0.7);
+.main-header {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(18, 18, 18, 0.7);
+}
+
+.main-header__button {
+  cursor: pointer;
+  margin: auto 1rem;
+}
+
+.main-header__button-line {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.main-header__logo {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto 1rem;
+}
+
+.main-header__logo img {
+  height: 2.5rem;
+  vertical-align: middle;
 }
 
 
-.header__links {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding: 0 1.5rem;
+.main-header__links {
+  display: none;
+  width: 100%;
+  padding: 0 1.5rem;
 }
 
-.header__links a:hover {
-    text-decoration: underline white solid;
-}
+/*.main-header__links a:hover {*/
+/*  text-decoration: underline white solid;*/
+/*}*/
+
 
 .header__link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0.8rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.8rem 1.5rem;
 }
 
 main {
-    padding-top: 1.5rem;
-    grid-area: main;
+  padding-top: 1.5rem;
+  grid-area: main;
 }
 
 .presentation {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-.image__bitmoji {
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    transform: scale(0.7);
-    overflow: hidden;
-    justify-self: center;
+.presentation-image {
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  transform: scale(0.7);
+  overflow: hidden;
+  justify-self: center;
 }
 
-.text__bitmoji {
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    color: white;
-    font-size: 1.6rem;
-    width: 70%;
+.presentation-text {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-size: 1.6rem;
+  width: 70%;
 }
 
 footer {
-    background: black;
-    grid-area: footer;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    text-align: center;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-items: center;*/
+  grid-area: footer;
+  background: rgba(18, 18, 18, 0.7);
+  color: white;
+  font-weight: lighter;
+  font-size: 0.7rem;
+  padding: 1rem 1rem;
+  text-align: right;
+}
+
+@media (min-width: 40rem) {
+  .main-header__links {
+    display: block;
+  }
+
+  .header__link {
+    font-size: 1rem;
+  }
+
+  .main-header__button {
+    display: none;
+  }
 }
