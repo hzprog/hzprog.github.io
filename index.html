@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/stars.css"/>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="scripts/main.js"></script>
 </head>
 <body>
@@ -44,8 +45,8 @@
             <div class="presentation-image">
                 <img src="./images/bitmoji.png" alt="Image of my Bitmoji in snapchat">
             </div>
-            <div class="presentation-text">
-                <h1>Hello I'm Houari Software engineer And web Developer</h1>
+            <div class="presentation-text" >
+                <h1 id="typed"></h1>
             </div>
         </div>
     </section>
@@ -56,4 +57,13 @@
 </footer>
 
 </body>
+<script>
+    let typed = new Typed('#typed', {
+        strings: ["Hello I'm Houari, Software engineer and Web Developer","Feel free to contact me."],
+        typeSpeed: 55,
+        fadeOutDelay: 800,
+        fadeOut: true,
+        showCursor: false,
+    });
+</script>
 </html>
