@@ -150,7 +150,8 @@ main {
 .presentation {
   display: grid;
   align-items: center;
-  grid-template-rows: auto 6rem;
+  grid-template-rows: auto 7rem;
+  grid-row-gap: 1rem;
 }
 
 .presentation-image {

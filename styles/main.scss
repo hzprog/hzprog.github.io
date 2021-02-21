@@ -159,7 +159,8 @@ main {
 .presentation {
   display: grid;
   align-items: center;
-  grid-template-rows: auto 6rem;
+  grid-template-rows: auto 7rem;
+  grid-row-gap: 1rem;
 }
 
 .presentation-image {
@@ -171,7 +172,6 @@ main {
   img {
     height: 12rem;
     vertical-align: middle;
-
     @media (min-width: 40rem) {
       height: 16rem;
     }
@@ -214,7 +214,7 @@ footer {
 }
 
 @keyframes animate-links {
-  0%{
+  0% {
     transform: translateX(-30rem);
     opacity: 0;
   }
@@ -222,7 +222,7 @@ footer {
     transform: translateX(3rem);
   }
 
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
