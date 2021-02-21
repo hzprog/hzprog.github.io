@@ -30,6 +30,37 @@ a {
   z-index: -2;
 }
 
+.menu-mobile {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: #090a0f;
+  z-index: 19;
+}
+
+.menu-mobile__display {
+  display: block !important;
+  opacity: 1 !important;
+  animation: fadein 0.5s ease-out;
+}
+
+.menu-mobile__links {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-mobile__link {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  animation-delay: 0.3s;
+  animation: animate-links 1s ease-out;
+}
+
 .main-header {
   grid-area: header;
   position: fixed;
@@ -119,7 +150,7 @@ main {
 .presentation {
   display: grid;
   align-items: center;
-  justify-content: center;
+  grid-template-rows: auto 6rem;
 }
 
 .presentation-image {
@@ -163,6 +194,28 @@ footer {
   font-size: 0.7rem;
   padding: 1rem 1rem;
   text-align: right;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate-links {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
