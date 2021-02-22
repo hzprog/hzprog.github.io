@@ -282,17 +282,17 @@ footer {
 
 #skills {
   background: whitesmoke;
-  color: #2c4057;
+  color: #e0e7ef;
 }
 #skills .section-title {
-  color: #2c4057;
+  color: #1b2735;
 }
 
 .skills-container {
   display: flex;
   flex-direction: column;
   margin: 2rem 1rem;
-  color: #2c4057;
+  color: #e0e7ef;
   overflow: hidden;
 }
 @media (min-width: 40rem) {
@@ -303,13 +303,14 @@ footer {
 }
 
 div svg {
-  fill: #2c4057;
+  fill: #e0e7ef;
   height: 6rem;
   width: 6rem;
 }
 
 .skill {
   border: 3px solid #1b2735;
+  background: #1b2735;
   border-radius: 60px;
   width: 100%;
   margin-top: 2rem;
@@ -345,7 +346,7 @@ div svg {
   flex-direction: column;
   align-items: center;
   padding: 0.5rem 2rem;
-  border: 1px solid #1b2735;
+  border: 1px solid #e0e7ef;
   border-radius: 30px;
 }
 

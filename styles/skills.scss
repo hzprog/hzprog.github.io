@@ -1,12 +1,12 @@
-$main-color-lighten: lighten(#1b2735, 0%);
-$main-color: lighten(#1b2735, 10%);
+$main-color-lighten: #1b2735;
+$main-color: lighten(#1b2735, 75%);
 
 #skills {
   background: whitesmoke;
   color: $main-color;
 
   .section-title {
-    color: $main-color;
+    color: $main-color-lighten;
   }
 }
 
@@ -33,7 +33,7 @@ div {
 
 .skill {
   border: 3px solid $main-color-lighten;
-
+  background: #1b2735;
   border-radius: 60px;
   width: 100%;
   margin-top: 2rem;
@@ -74,6 +74,6 @@ div {
   flex-direction: column;
   align-items: center;
   padding: 0.5rem 2rem;
-  border: 1px solid $main-color-lighten;
+  border: 1px solid $main-color;
   border-radius: 30px;
 }
