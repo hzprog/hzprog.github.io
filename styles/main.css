@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -201,7 +202,7 @@ main {
 }
 @media (min-width: 40rem) {
   main {
-    grid-template-rows: repeat(2, 100vh) auto 100vh;
+    grid-template-rows: repeat(3, 100vh) auto 100vh;
   }
 }
 
@@ -259,6 +260,58 @@ section .section-title {
   .presentation-text h1 {
     font-size: 2rem;
   }
+}
+
+#about {
+  background-color: #1B2735;
+}
+
+#about .section-title {
+  color: white;
+  font-family: "Roboto slab", sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.about-description {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  width: 830px;
+  margin: 10rem auto;
+}
+
+.about-actions {
+  display: flex;
+  justify-content: space-around;
+}
+.about-actions div {
+  width: 230px;
+  height: 230px;
+  background-color: white;
+  border-radius: 73px;
+  margin-bottom: 6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1B2735;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.about-actions div span {
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #1B2735;
+}
+
+.about-action__github img,
+.about-action__here img,
+.about-action__email img {
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin: 20px auto;
 }
 
 #contact {

@@ -47,7 +47,7 @@ main {
   width: 100%;
   grid-template-rows: 100vh auto auto auto;
   @media (min-width: 40rem) {
-    grid-template-rows: repeat(2, 100vh) auto 100vh;
+    grid-template-rows: repeat(3, 100vh) auto 100vh;
   }
 }
 
@@ -112,9 +112,7 @@ section {
 
 }
 
-#about {
-
-}
+@import 'about';
 
 #contact {
   background: white;
