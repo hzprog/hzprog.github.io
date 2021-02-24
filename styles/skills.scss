@@ -7,18 +7,18 @@ $main-color: lighten(#1b2735, 75%);
 
   .section-title {
     color: $main-color-lighten;
+    font-size: 4.5rem;
   }
 }
 
 .skills-container {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 1rem;
-  color: $main-color;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90%);
+  justify-content: center;
+  margin-bottom: 6rem;
   @media (min-width: 40rem) {
-    flex-direction: row;
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-gap: 2rem;
   }
 }
 
@@ -32,9 +32,10 @@ div {
 
 
 .skill {
+  justify-self: center;
   border: 3px solid $main-color-lighten;
   background: #1b2735;
-  border-radius: 60px;
+  border-radius: 50px;
   width: 100%;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -43,6 +44,7 @@ div {
   align-items: center;
 
   @media (min-width: 40rem) {
+    border-radius: 60px;
     width: 25rem;
   }
 

@@ -7,34 +7,58 @@
 #about .section-title {
   color: white;
   font-family: "Roboto slab", sans-serif;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  @media (min-width: 850px) {
+    font-size: 4.5rem;
+  }
 }
 
 .about-description {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
-  width: 830px;
-  margin: 10rem auto;
+  width: 100%;
+  padding: 1rem;
+
+  margin: 3rem auto;
+
+  @media (min-width: 850px) {
+    width: 830px;
+    margin: 10rem auto;
+    font-size: 2rem;
+  }
 }
 
 .about-actions {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+
+  @media (min-width: 850px) {
+    flex-direction: row;
+  }
 
   div {
     width: 230px;
     height: 230px;
+    transform: scale(0.7);
     background-color: white;
     border-radius: 73px;
-    margin-bottom: 6rem;
+    margin-bottom: 0.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #1B2735;
     font-size: 1.5rem;
     text-align: center;
+
+    @media (min-width: 850px) {
+      transform: scale(1);
+      margin-bottom: 6rem;
+    }
 
     span {
       display: block;
@@ -45,9 +69,9 @@
   }
 }
 
-.about-action__github ,
+.about-action__github,
 .about-action__here,
-.about-action__email{
+.about-action__email {
   img {
     width: 125px;
     height: 125px;

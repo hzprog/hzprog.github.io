@@ -198,11 +198,12 @@ main {
   display: grid;
   align-content: center;
   width: 100%;
-  grid-template-rows: 100vh auto auto auto;
+  grid-template-rows: 100vh auto auto auto auto;
+  grid-template-areas: "presentation" "projects" "skills" "about" "contact";
 }
-@media (min-width: 40rem) {
+@media (min-width: 81rem) {
   main {
-    grid-template-rows: repeat(3, 100vh) auto 100vh;
+    grid-template-rows: 100vh auto auto auto auto;
   }
 }
 
@@ -225,6 +226,7 @@ section .section-title {
 .presentation {
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-rows: auto 7rem;
   grid-row-gap: 1rem;
 }
@@ -269,34 +271,61 @@ section .section-title {
 #about .section-title {
   color: white;
   font-family: "Roboto slab", sans-serif;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
+}
+@media (min-width: 850px) {
+  #about .section-title {
+    font-size: 4.5rem;
+  }
 }
 
 .about-description {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
-  width: 830px;
-  margin: 10rem auto;
+  width: 100%;
+  padding: 1rem;
+  margin: 3rem auto;
+}
+@media (min-width: 850px) {
+  .about-description {
+    width: 830px;
+    margin: 10rem auto;
+    font-size: 2rem;
+  }
 }
 
 .about-actions {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 850px) {
+  .about-actions {
+    flex-direction: row;
+  }
 }
 .about-actions div {
   width: 230px;
   height: 230px;
+  transform: scale(0.7);
   background-color: white;
   border-radius: 73px;
-  margin-bottom: 6rem;
+  margin-bottom: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #1B2735;
   font-size: 1.5rem;
   text-align: center;
+}
+@media (min-width: 850px) {
+  .about-actions div {
+    transform: scale(1);
+    margin-bottom: 6rem;
+  }
 }
 .about-actions div span {
   display: block;
@@ -339,19 +368,19 @@ footer {
 }
 #skills .section-title {
   color: #1b2735;
+  font-size: 4.5rem;
 }
 
 .skills-container {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 1rem;
-  color: #e0e7ef;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90%);
+  justify-content: center;
+  margin-bottom: 6rem;
 }
 @media (min-width: 40rem) {
   .skills-container {
-    flex-direction: row;
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-gap: 2rem;
   }
 }
 
@@ -362,9 +391,10 @@ div svg {
 }
 
 .skill {
+  justify-self: center;
   border: 3px solid #1b2735;
   background: #1b2735;
-  border-radius: 60px;
+  border-radius: 50px;
   width: 100%;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -374,6 +404,7 @@ div svg {
 }
 @media (min-width: 40rem) {
   .skill {
+    border-radius: 60px;
     width: 25rem;
   }
 }

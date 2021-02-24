@@ -5,7 +5,10 @@ const mainHeaderButton = document.querySelector(".main-header__button");
 
 const skill = document.getElementById("skills");
 
-AOS.init();
+AOS.init({
+  offset: 250,
+  once: true,
+});
 
 mainHeaderButton.addEventListener("click", () => {
   mainHeaderButton.classList.toggle("change");
