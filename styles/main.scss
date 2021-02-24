@@ -69,7 +69,12 @@ section {
   .section-title {
     color: white;
     text-align: center;
+    font-family: "Roboto slab", sans-serif;
+    font-size: 2.5rem;
     font-weight: bold;
+    @media (min-width: 850px) {
+      font-size: 4.5rem;
+    }
   }
 }
 
@@ -144,7 +149,6 @@ footer {
     text-align: right;
   }
 }
-
 
 
 @import 'skills';

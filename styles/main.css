@@ -214,7 +214,14 @@ section {
 section .section-title {
   color: white;
   text-align: center;
+  font-family: "Roboto slab", sans-serif;
+  font-size: 2.5rem;
   font-weight: bold;
+}
+@media (min-width: 850px) {
+  section .section-title {
+    font-size: 4.5rem;
+  }
 }
 
 #section-1 {
@@ -270,14 +277,6 @@ section .section-title {
 
 #about .section-title {
   color: white;
-  font-family: "Roboto slab", sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-@media (min-width: 850px) {
-  #about .section-title {
-    font-size: 4.5rem;
-  }
 }
 
 .about-description {
@@ -368,7 +367,6 @@ footer {
 }
 #skills .section-title {
   color: #1b2735;
-  font-size: 4.5rem;
 }
 
 .skills-container {
