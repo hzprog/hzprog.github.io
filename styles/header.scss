@@ -1,0 +1,170 @@
+.menu-mobile {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: #090a0f;
+  z-index: 19;
+}
+
+.menu-mobile__display {
+  display: block !important;
+  opacity: 1 !important;
+  animation: fadein 0.5s ease-out;
+}
+
+.menu-mobile__links {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-mobile__link {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  animation-delay: 0.3s;
+  animation: animate-links 1s ease-out;
+}
+.active {
+  animation: anim 1s ease-out;
+}
+
+.main-header {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(9, 10, 15, 0.7);
+}
+
+.main-header__button {
+  cursor: pointer;
+  margin: auto 1rem;
+
+  @media (min-width: 40rem) {
+    display: none;
+  }
+}
+
+.main-header__button-line {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  background-color: white;
+  transition: 0.4s ease-out;
+}
+
+.change {
+  .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+.main-header__logo {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto 1rem;
+
+  img {
+    height: 2.5rem;
+    vertical-align: middle;
+  }
+}
+
+
+.main-header__links {
+  display: none;
+  width: 100%;
+  padding: 0 1.5rem;
+
+  @media (min-width: 40rem) {
+    display: block;
+  }
+}
+
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.8rem 1.5rem;
+  position: relative;
+
+  &:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes anim {
+  0% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-3rem);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(30rem);
+    opacity: 0;
+  }
+}
+
+@keyframes animate-links {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

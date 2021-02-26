@@ -1,0 +1,80 @@
+$main-color-lighten: #1b2735;
+$main-color: lighten(#1b2735, 75%);
+
+#skills {
+  background: whitesmoke;
+  color: $main-color;
+
+  .section-title {
+    color: $main-color-lighten;
+  }
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90%);
+  justify-content: center;
+  margin-bottom: 6rem;
+  @media (min-width: 40rem) {
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-gap: 2rem;
+  }
+}
+
+div {
+  svg {
+    fill: $main-color;
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+
+.skill {
+  justify-self: center;
+  border: 3px solid $main-color-lighten;
+  background: #1b2735;
+  border-radius: 50px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 40rem) {
+    border-radius: 60px;
+    width: 25rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin-top: 0.3rem;
+      font-size: 1.2rem;
+    }
+  }
+
+}
+
+
+.skill-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border: 1px solid $main-color;
+  border-radius: 30px;
+}
