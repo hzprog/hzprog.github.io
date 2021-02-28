@@ -47,6 +47,12 @@
     font-size: 1.5rem;
     text-align: center;
 
+
+    &:hover,
+    &:active{
+      background: gray;
+    }
+
     @media (min-width: 850px) {
       transform: scale(1);
       margin-bottom: 6rem;
@@ -56,9 +62,11 @@
       display: block;
       margin-top: 0.5rem;
       text-decoration: none;
-      color: #1B2735;
+      color: black;
     }
   }
+
+
 }
 
 .about-action__github,
