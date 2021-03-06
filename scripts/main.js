@@ -5,6 +5,33 @@ const mainHeaderButton = document.querySelector(".main-header__button");
 
 const skill = document.getElementById("skills");
 
+const form = document.getElementById("contact-form");
+
+const handleFormSubmit = (event) => {
+  event.preventDefault();
+  const email = document.getElementById("email");
+  const name = document.getElementById("name");
+  const message = document.getElementById("message");
+
+  if (email.value === "" || name.value === "" || message.value === "") {
+  } else {
+    Email.send({
+      SecureToken: "fbc57371-9cd3-4d22-bb08-e54ae042d88a",
+      To: "houariezzine@gmail.com",
+      From: "hz.pro666@gmail.com",
+      Subject: `${name.value} messaged you`,
+      Body: `email : ${email.value} \n message : ${message.value}`,
+    })
+      .then(function (message) {
+        alert(message);
+      })
+      .catch((message) => {
+        console.log(message);
+      });
+  }
+};
+form.addEventListener("submit", handleFormSubmit);
+
 AOS.init({
   offset: 250,
   once: true,
