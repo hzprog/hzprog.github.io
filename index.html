@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/stars.css"/>
     <link rel="stylesheet" href="styles/main.css">
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -22,6 +23,12 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="50">
     <meta property="og:image:height" content="50">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const sendMail = (event) => {
+
+        };
+    </script>
 </head>
 <body>
 
@@ -222,27 +229,28 @@
             <h1>Contact Me</h1>
             <h2>I'd love to hear from you!</h2>
         </div>
-        <form action="#" class="contact-form">
+        <form class="contact-form" method="post" id="contact-form">
             <label for="name">Name</label>
-            <input type="text" id="name" autocomplete="off">
+            <input type="text" id="name" autocomplete="off" required>
             <label for="email">Email</label>
-            <input type="email" id="email" autocomplete="off">
+            <input type="email" id="email" autocomplete="off" required>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
 </main>
 
 <footer>
-
     <a href="mailto: hz.prog@gmail.com">
-        <span>Email : Hz.prog@gmail.com</span>
+        <span>Hz.prog@gmail.com</span>
     </a>
 </footer>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/></svg>
+    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+        <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/>
+    </svg>
 </button>
 
 </body>

@@ -1,10 +1,11 @@
 @mixin focus() {
-  background-color: lighten(#1b2735, 10%);
+  //background-color: lighten(#1b2735, 10%);
+  background-color: lighten(#181818, 10%);
   outline: none;
 }
 
 #contact {
-  background: white;
+  background: whitesmoke;
   grid-area: contact;
   display: flex;
   flex-direction: column;
@@ -39,6 +40,7 @@
     margin-bottom: 0.3rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    font-weight: bold;
   }
 
   textarea {
@@ -47,7 +49,7 @@
     padding: 0.3rem;
   }
 
-  button {
+button {
     width: 10rem;
     padding: 0.4rem 0.2rem;
     border-radius: 30px;
@@ -61,7 +63,8 @@
   }
 
   input, textarea, button {
-    background-color: #1b2735;
+    //background-color: #1b2735;
+    background-color: #181818;
     color: white;
   }
 
@@ -84,7 +87,8 @@
     font-weight: bold;
     font-size: 2.5rem;
     line-height: 0.9;
-    color: #1b2735;
+    //color: #1b2735;
+    color: #181818;
     width: 100%;
     margin-bottom: 0;
     @media (min-width: 80rem) {
@@ -99,6 +103,7 @@
     font-weight: normal;
     font-size: 1.2rem;
     color: #a1a9b2;
+    //color: #181818;
     @media (min-width: 80rem) {
       font-size: 1.5rem;
     }
