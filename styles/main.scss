@@ -128,7 +128,35 @@ section {
 
 
 #projects {
+  grid-area: projects;
+  background-color: #181818;
 
+  div {
+    display: flex;
+    justify-content:center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .image{
+      width: 250px;
+      height: 250px;
+      background-color: white;
+      border-radius: 50px;
+      margin-right: 40px;
+      background-color: gray;
+    }
+    .description {
+      width: 700px;
+      height: 250px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 50px;
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @import 'about';
