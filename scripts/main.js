@@ -54,7 +54,7 @@ mobileMenuLinks.forEach((link) => {
 });
 
 //Get the button:
-mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("scroll-up-button");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -63,9 +63,11 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton.classList.add("scroll-up-button-visibility");
+    // mybutton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    // mybutton.style.display = "none";
+    mybutton.classList.remove("scroll-up-button-visibility");
   }
 }
 

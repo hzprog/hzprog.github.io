@@ -570,7 +570,7 @@ div svg {
   border-radius: 30px;
 }
 
-#myBtn {
+.scroll-up-button-styles {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -584,10 +584,26 @@ div svg {
   padding: 0;
   transform: scale(1.8);
 }
-#myBtn svg {
+.scroll-up-button-styles svg {
   display: block;
   margin: auto;
   fill: black;
+}
+
+.scroll-up-button-visibility {
+  display: block;
+  animation: animate-scroll-up-button 0.5s ease-out;
+}
+
+@keyframes animate-scroll-up-button {
+  from {
+    transform: translateY(1rem) scale(1.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem) scale(1.8);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

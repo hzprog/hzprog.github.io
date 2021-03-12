@@ -133,10 +133,11 @@ section {
 
   div {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
-    .image{
+
+    .image {
       width: 250px;
       height: 250px;
       background-color: white;
@@ -144,6 +145,7 @@ section {
       margin-right: 40px;
       background-color: gray;
     }
+
     .description {
       width: 700px;
       height: 250px;
@@ -180,10 +182,11 @@ footer {
   }
 
   span:hover,
-  span:active{
+  span:active {
     background-color: white;
     color: #1b2735;
   }
+
   @media (min-width: 40rem) {
     text-align: center;
   }
@@ -192,11 +195,12 @@ footer {
 
 @import 'skills';
 
-#myBtn {
+
+.scroll-up-button-styles {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px ;
+  right: 30px;
   z-index: 50;
   background: white;
   border: none;
@@ -205,12 +209,31 @@ footer {
   border-radius: 50%;
   padding: 0;
   transform: scale(1.8);
+
   svg {
     display: block;
     margin: auto;
     fill: black;
   }
-
 }
+
+.scroll-up-button-visibility {
+  display: block;
+  animation: animate-scroll-up-button 0.5s ease-out;
+}
+
+@keyframes animate-scroll-up-button {
+  from {
+    transform: translateY(1rem) scale(1.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem) scale(1.8);
+    opacity: 1;
+  }
+}
+
+
 
 
