@@ -62,7 +62,10 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
     mybutton.classList.add("scroll-up-button-visibility");
     // mybutton.style.display = "block";
   } else {
