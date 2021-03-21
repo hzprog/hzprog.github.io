@@ -232,7 +232,9 @@ section .section-title {
 
 .presentation {
   display: grid;
+  align-items: center;
   place-items: center;
+  justify-content: center;
   grid-template-rows: 12rem 10rem;
 }
 
@@ -321,6 +323,9 @@ section .section-title {
 }
 #projects div .description h3 {
   margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: chocolate;
 }
 #projects div .description span {
   font-weight: bold;
