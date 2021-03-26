@@ -295,10 +295,12 @@ section .section-title {
   border-radius: 50px;
   background-color: gray;
   overflow: hidden;
+  transform: scale(0.8);
 }
 @media (min-width: 81rem) {
   #projects div .image {
     margin-right: 40px;
+    transform: scale(1);
   }
 }
 #projects div .description {
@@ -312,13 +314,14 @@ section .section-title {
   border-radius: 50px;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 0 5%;
 }
 @media (min-width: 81rem) {
   #projects div .description {
     width: 700px;
     height: 250px;
+    font-size: 1.4rem;
   }
 }
 #projects div .description h3 {

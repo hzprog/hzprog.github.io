@@ -20,11 +20,11 @@ const handleContactFormSubmit = (event) => {
   ) {
   } else {
     Email.send({
-      SecureToken: "fbc57371-9cd3-4d22-bb08-e54ae042d88a",
-      To: "houariezzine@gmail.com",
+      SecureToken: "4f20dcc2-3f85-4603-96a1-c4501260f1dd",
+      To: "hzproforg@gmail.com",
       From: "hz.pro666@gmail.com",
-      Subject: `${nameInput.value} messaged you`,
-      Body: `<h2>Email :</h2> ${emailInput.value} <br/> <h2>Message :</h2> ${messageInput.value}`,
+      Subject: `${nameInput.value} sent you a message`,
+      Body: `<strong>Email :</strong> ${emailInput.value} <br/> <strong>Message :</strong>${messageInput.value} `,
     })
       .then((success) => {
         console.log(success);
@@ -56,6 +56,12 @@ mobileMenuLinks.forEach((link) => {
     }, 1000);
   });
 });
+
+const delay = () => {
+  setTimeout(() => {
+    window.location = "#skills";
+  }, 1000);
+};
 
 //Get the button:
 scrollButton = document.getElementById("scroll-up-button");
