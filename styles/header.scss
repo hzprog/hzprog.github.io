@@ -28,6 +28,7 @@
   animation-delay: 0.3s;
   animation: animate-links 1s ease-out;
 }
+
 .active {
   animation: anim 1s ease-out;
 }
@@ -38,7 +39,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 100;
   display: flex;
   height: 3.5rem;
   align-items: center;
@@ -135,7 +136,6 @@
     opacity: 1;
   }
 }
-
 
 
 @keyframes anim {

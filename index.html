@@ -24,11 +24,6 @@
     <meta property="og:image:width" content="50">
     <meta property="og:image:height" content="50">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        const sendMail = (event) => {
-
-        };
-    </script>
 </head>
 <body>
 
@@ -43,7 +38,7 @@
 <div class="menu-mobile">
     <div class="menu-mobile__links">
         <a class="menu-mobile__link" href="#projects">Projects</a>
-        <a class="menu-mobile__link" href="#skills">Skills</a>
+        <a class="menu-mobile__link" onclick="delay()">Skills</a>
         <a class="menu-mobile__link" href="#about">About Me</a>
         <a class="menu-mobile__link" href="#contact">Contact Me</a>
     </div>
@@ -79,9 +74,40 @@
             </div>
         </div>
     </section>
-    <!--    <section id="projects">-->
-    <!--        <h1 class="section-title">Projects</h1>-->
-    <!--    </section>-->
+    <section id="projects">
+        <h1 class="section-title">Projects</h1>
+        <div>
+            <div class="image">
+                <img src="images/laravel%20logo.jpg" alt="laravel logo">
+            </div>
+            <div class="description">
+                <h3>LRIT</h3>
+                <p>A System created for managing the equipment and the personal of research laboratory of an
+                    university created with <span>Laravel and MYSQL</span>.</p>
+            </div>
+        </div>
+        <div>
+            <div class="image">
+                <img src="images/laravel%20logo.jpg" alt="laravel logo">
+            </div>
+            <div class="description">
+                <h3>Scholar Soft</h3>
+                <p>An absence and correction management system for the university created using
+                    <span>Laravel and MYSQL</span>.</p>
+            </div>
+        </div>
+        <div>
+            <div class="image" >
+                <img src="images/nodejs%20react.jpg" alt="nodejs and react image">
+            </div>
+            <div class="description">
+                <h3>Smart Alerts</h3>
+                <p>A Web application that allows the management of alerts automatically in
+                    order to optimize the processing of daily tasks of companies that use ERPs and bring them
+                    considerable efficiency using <span>Express.js and React</span>.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="skills">
         <h1 class="section-title">Skills</h1>
@@ -211,12 +237,12 @@
                 </a>
             </div>
             <div class="about-action__here">
-                <a href="#skills">
+                <a href="#contact">
                     <span>Here</span>
                     <img src="images/977597.png" alt="icon pc">
                 </a>
             </div>
-            <div class="about-action__email">
+            <div class="about-action__email" >
                 <a href="mailto: hz.prog@gmail.com">
                     <span>Email</span>
                     <img src="images/icon-email-512.webp" alt="icon email">
@@ -247,7 +273,7 @@
     </a>
 </footer>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">
+<button onclick="topFunction()" id="scroll-up-button" class="scroll-up-button-styles" title="Go to top">
     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
         <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/>
     </svg>
