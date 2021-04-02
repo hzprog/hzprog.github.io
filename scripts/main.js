@@ -3,8 +3,6 @@ const menuMobile = document.querySelector(".menu-mobile");
 const mobileMenuLinks = document.querySelectorAll(".menu-mobile__links a");
 const mainHeaderButton = document.querySelector(".main-header__button");
 
-// const skill = document.getElementById("skills");
-
 const contactForm = document.getElementById("contact-form");
 
 const handleContactFormSubmit = (event) => {
@@ -28,6 +26,7 @@ const handleContactFormSubmit = (event) => {
     })
       .then((success) => {
         console.log(success);
+        window.scrollTo(0, 0);
       })
       .catch((error) => {
         console.log(error);

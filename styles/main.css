@@ -508,6 +508,16 @@ section .section-title {
   }
 }
 
+input:-webkit-autofill {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #181818 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill:focus {
+  background-color: #323232;
+  outline: none;
+}
+
 footer {
   grid-area: footer;
   background: rgba(9, 10, 15, 0.7);
@@ -638,6 +648,9 @@ div svg {
     transform: translateY(0rem) scale(1.8);
     opacity: 1;
   }
+}
+a {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

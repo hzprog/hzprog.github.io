@@ -84,7 +84,6 @@ section {
 
 .presentation {
   display: grid;
-  //padding-top: 0;
   align-items: center;
   place-items: center;
   justify-content: center;
@@ -196,6 +195,10 @@ footer {
     transform: translateY(0rem) scale(1.8);
     opacity: 1;
   }
+}
+
+a {
+  cursor: pointer;
 }
 
 
