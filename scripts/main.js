@@ -3,7 +3,7 @@ const menuMobile = document.querySelector(".menu-mobile");
 const mobileMenuLinks = document.querySelectorAll(".menu-mobile__links a");
 const mainHeaderButton = document.querySelector(".main-header__button");
 
-const skill = document.getElementById("skills");
+// const skill = document.getElementById("skills");
 
 const contactForm = document.getElementById("contact-form");
 
