@@ -3,9 +3,8 @@ const menuMobile = document.querySelector(".menu-mobile");
 const mobileMenuLinks = document.querySelectorAll(".menu-mobile__links a");
 const mainHeaderButton = document.querySelector(".main-header__button");
 
-// const skill = document.getElementById("skills");
-
 const contactForm = document.getElementById("contact-form");
+const popup = document.getElementById("popup");
 
 const handleContactFormSubmit = (event) => {
   event.preventDefault();
@@ -28,6 +27,10 @@ const handleContactFormSubmit = (event) => {
     })
       .then((success) => {
         console.log(success);
+        window.scrollTo(0, 0);
+        setTimeout(() => {
+          popup.classList.toggle("submit-success_visibility");
+        }, 500);
       })
       .catch((error) => {
         console.log(error);
@@ -86,4 +89,8 @@ const scrollFunction = () => {
 const topFunction = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+
+const HandleOkBtnPress = () => {
+  popup.classList.toggle("submit-success_visibility");
 };

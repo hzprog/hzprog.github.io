@@ -63,7 +63,6 @@ button {
   }
 
   input, textarea, button {
-    //background-color: #1b2735;
     background-color: #181818;
     color: white;
   }
@@ -109,3 +108,16 @@ button {
     }
   }
 }
+
+input:-webkit-autofill{
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #181818 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  &:focus {
+    background-color: lighten(#181818, 10%);
+    outline: none;
+  }
+}
+
+
+
