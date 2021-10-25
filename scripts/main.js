@@ -23,7 +23,7 @@ const handleContactFormSubmit = async (event) => {
       message: messageInput.value,
     };
 
-    const res = await fetch('http://localhost:5000/api', {
+    const res = await fetch('https://backend-for-portfolio.herokuapp.com/api', {
       method: 'POST',
       mode: 'cors',
       headers: {
